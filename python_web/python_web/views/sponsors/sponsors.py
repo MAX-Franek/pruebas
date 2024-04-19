@@ -5,7 +5,7 @@ from python_web.components.link_sponsor import link_sponsor
 def sponsors() -> rx.Component:
     return rx.vstack(
         title("Colaboran"),
-        rx.hstack(
+        rx.grid(
             link_sponsor(
                 "Elgato.png",
                 "https://www.elgato.com/es/es"
@@ -14,7 +14,8 @@ def sponsors() -> rx.Component:
                 "mvp.png",
                 "https://www.elgato.com/es/es"
             ),
-            spacing="4"
+            spacing="4",
+            columns="2"
         ),
         width="100%",
         spacing="4"

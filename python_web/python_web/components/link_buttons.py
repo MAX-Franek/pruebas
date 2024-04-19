@@ -15,9 +15,10 @@ def link_buttons(title: str, body: str, url: str, tag: str) -> rx.Component:
                 rx.vstack(
                     rx.text(title, style=styles.button_title_style),
                     rx.text(body, style=styles.button_body_style),
-                    spacing = "0"
-                )
-
+                    spacing = "0",
+                    padding_right=styles.Size.SMALL.value
+                ),
+                width="100%"
             )
         ),
         href=url,

@@ -6,7 +6,7 @@ def links() -> rx.Component:
     return rx.vstack(
         title("Comunidad"),
         link_buttons("Twitch",
-                     "Directos todos los dias de la semana",
+                     "Directos todos los dias de la semana pero no te creas que voy ha hacer directo los lunes pero bueno si me lo pides me lo pienso",
                      "https://www.twitch.tv/",
                      "twitch"
                 ),
@@ -23,7 +23,7 @@ def links() -> rx.Component:
         link_buttons("Instagram",
                      "Publicacion cada semana",
                      "https://www.instagram.com/",
-                     "twitch"
+                     "instagram"
                 ),
         title("Comunidad"),
         link_buttons("Twitch",

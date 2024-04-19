@@ -3,7 +3,7 @@ from python_web.components.link_icon import link_icon
 from python_web.styles.styles import Size as Size
 from python_web.components.info_text import info_text
 from python_web.styles.colors import TextColor as TextColor
-from python_web.styles.fonts import Font as Font
+from python_web.styles.fonts import Font, FontWeight
 from python_web.styles.colors import color as color
 
 def header() -> rx.Component:
@@ -21,7 +21,8 @@ def header() -> rx.Component:
                                 "Fran Parra",
                                 size="6",
                                 color=TextColor.HEADER.value,
-                                font_family=Font.TITLE.value
+                                font_family=Font.TITLE.value,
+                                font_weight= FontWeight.MEDIUM.value,
                             ),
                             rx.text(
                                 "@franparradev",
