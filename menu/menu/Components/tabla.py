@@ -1,0 +1,78 @@
+import reflex as rx
+
+def tabla(title: str, body: str) -> rx.Component:
+    return rx.flex(
+        rx.heading(title),
+        rx.table.root(
+    rx.table.header(
+        rx.table.row(
+            rx.table.column_header_cell(""),
+            rx.table.column_header_cell("Lunes",col_span="2"),
+            rx.table.column_header_cell("Martes",col_span="2"),
+            rx.table.column_header_cell("Miercoles",col_span="2"),
+            rx.table.column_header_cell("Jueves",col_span="2"),
+            rx.table.column_header_cell("Viernes",col_span="2"),
+        ),
+        ),
+    rx.table.body(
+        rx.table.row(
+            rx.table.row_header_cell(""),
+            rx.table.cell("Id"),
+            rx.table.cell("Nombre"),
+            rx.table.cell("Id"),
+            rx.table.cell("Nombre"),
+            rx.table.cell("Id"),
+            rx.table.cell("Nombre"),
+            rx.table.cell("Id"),
+            rx.table.cell("Nombre"),
+            rx.table.cell("Id"),
+            rx.table.cell("Nombre"),
+        ),
+        rx.table.row(
+            rx.table.row_header_cell("M"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),             
+        ),
+        rx.table.row(
+            rx.table.row_header_cell("T"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),            
+        ),
+        rx.table.row(
+            rx.table.row_header_cell("N"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),
+            rx.table.cell("4567"),
+            rx.table.cell("Juan"),            
+        ),
+    ),
+    size="3",
+    variant="surface",
+
+    ),
+    direction="column",
+    spacing="2",
+)    
+    
