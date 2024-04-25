@@ -1,10 +1,10 @@
 import reflex as rx
 from menu.styles.styles import Size as Size
 
-def link_navbar(text: str, url: str) -> rx.Component:
+def link_navbar(text: str, url: str,) -> rx.Component:
     return rx.link(
         rx.text(text),
         href=url,
-        is_external=True,
-        margin=Size.DEFAULT.value
+        margin=Size.DEFAULT.value,
+
     )

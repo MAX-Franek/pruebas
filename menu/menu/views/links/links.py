@@ -5,16 +5,16 @@ from menu.styles.colors import color
 def links() -> rx.Component:
     return rx.hstack(
         link_navbar(
-            "Hola",
-            "https://google.com/"
+            "Inicio",
+            ".."
         ),
                 link_navbar(
-            "Hola",
-            "https://google.com/"
+            "Calendario",
+            "calendario"
         ),
                 link_navbar(
-            "Hola",
-            "https://google.com/"
+            "Prueba",
+            "prueba"
         ),
                 link_navbar(
             "Hola",
